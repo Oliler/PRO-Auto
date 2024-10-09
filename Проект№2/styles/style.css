@@ -1,0 +1,910 @@
+*{
+    font-family: FreeMono, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    max-width: 1980px;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*  */
+/* Главное меню */
+/*  */
+header{
+    background-color: rgba(0, 0, 0, 0.966);
+}
+.header_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li{
+        position: relative;
+        padding: 26px 26px;
+        display: inline-block;
+        font-size: 20px;
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        border-bottom: 5px solid rgba(0, 0, 0, 0.966);
+    }
+    li:hover{
+    border-bottom: 5px solid red;
+    }
+}
+.logo{
+    width: 10%;
+}
+
+/*  */
+/* 2 Меню */
+/*  */
+.dopMenu{
+    display: none;
+    position: absolute;
+    width: 280px;
+    list-style: none;
+    padding: 10px;
+    top: 74px;
+    left: -10px;
+    justify-content: right;
+    li:hover{
+        border-bottom: 1px solid red
+    }
+    li{
+        background-color: black;
+        border: 1px solid red;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 20px;
+        margin: 5px auto;
+        width: 250px;    
+    }
+}
+li:hover .dopMenu{
+    display: block;
+}
+.dopMenu > li{
+    background-color: black;
+    border: 1px solid red;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px auto;
+    width: 250px;
+
+}
+.dopMenu > li:hover{
+    background-color: red;
+}
+/* 3 Меню */
+.dopMenu > li > ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    left: 260px;
+    top: -10px;
+    width: 250px;
+}
+.dopMenu > li:hover > ul{
+    display: inline-block;
+}
+.dopMenu > li > ul > li{
+    background-color: black;
+    border: 1px solid red;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px auto;
+    width: 155px;
+    border-bottom: 1px solid red;
+
+}
+.dopMenu > li > ul > li:hover{
+    background-color: red;
+    border-bottom: 1px solid red;
+}
+/* Header buttons */
+.header_buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.header_buttons button{
+    padding: 15px 30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid red;
+    font-size: 16px;
+}
+.header_buttons button:hover{
+    border: 2px solid white;
+    transition: 0.2s all;
+}
+.header_buttons img{
+    padding: 15px;
+    width: 63px;
+    height: 63px;
+    cursor: pointer;
+}
+/* first */
+.first_box{
+    width: 100%;
+    height: 900px;
+    background: url(/images/photo1.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.text_container{
+    position: relative;
+    width: 200px;
+    top: 140px;
+    left: 200px;
+}
+.text{
+    width: 200px;
+    height: 200px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 57px;
+    color: aliceblue;
+}
+.text button{
+    width: 320px;
+    height: 50px;
+    background-color: transparent;
+    color: aliceblue;
+    border: 3px solid red;
+    font-size: 25px;
+}
+.text button:hover{
+    border-color: aliceblue;
+    transition: 0.2s all ease-in-out;
+}
+#buttons_container{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+#buttons_container button{
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    background-color: transparent;
+    color: aliceblue;
+    border: none;
+    font-size: 20px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border: 1px solid transparent;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buttons_container button:hover{
+    border: 3px solid red;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: red;
+    transition: 0.3s all;
+}
+#buttons_container img{
+    width: 120px;
+    height: 100px;
+}
+/* Second Box */
+.second_box{
+    position: relative;
+    width: 100%;
+    background: url(/images/bgfor2box.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.textForSecondBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    width: 900px;
+}
+.textForSecondBox p{
+    font-size: 26px;
+    color: black;
+}
+.textForSecondBox hr{
+    background-color: red;
+    width: 50%;
+    height: 4px;
+    border: none;
+    margin: 10px;
+}
+#imgForsecondBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    width: 1200px;
+}
+.p{
+    padding: 4px;
+    font-size: 25px;
+    color: black;
+}
+
+#store{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 400px;
+    border: 1px solid;
+    margin: 20px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p{
+        position: relative;
+        color: aliceblue;
+        font-size: 27px;
+        margin: 10px;
+    }
+    button{
+        position: relative;
+        color: aliceblue;
+        font-size: 19px;
+        background-color: transparent;
+        border: 3px solid red;
+        padding: 10px;
+    }
+    button:hover{
+        border-color: aliceblue;
+        transition: 0.2s all;
+    }
+}
+#store img{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    opacity: 50%;
+}
+/* third box */
+.third_box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: url(/images/bgfor3box.png);
+    align-items: center;
+    background-size: cover;
+    flex-direction: column;
+}
+.textForThirdBox{
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+    top: 70px;
+}
+.textForThirdBox p{
+    position: relative;
+    top: 10px;
+    font-size: 27px;
+    padding: 2px;
+}
+.textForThirdBox hr{
+    width: 15%;
+    height: 4px;
+    background-color: red;
+    border: none;
+}
+.centerbox{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    top: 300px;
+    width: 80%;
+}
+.liForThirdBox{
+    li{
+    padding: 25px;
+    margin: 30px;
+    font-size: 30px;
+    position: relative;
+    bottom: 150px;
+    width: 700px;
+    height: 160px;
+}
+    h3{
+        position: relative;
+        left: 120px;
+        font-size: 20px;
+    }
+    li:hover{
+        border-top-left-radius: 2pc;
+        background: -webkit-linear-gradient(360deg, #a51a1a, rgba(0, 0, 0, 0));
+        cursor: default;
+    } 
+    p{
+        position: relative;
+        left: 120px;
+        font-size: 18px;
+        top: 10px;
+    }
+    img{
+        position: absolute;
+        right: 570px;
+        bottom: 40px;
+        width: 120px;
+        height: 110px;
+    }
+}                                                       
+.imgForThirdBox img{
+    width: 100%;
+    height: 100%;
+}
+.imgForThirdBox{
+    width: 550px;
+    height: 550px;
+    position: relative;
+    bottom: 150px;
+}
+.btnForThirdBox{
+    position: relative;
+    top: 160px;
+    width: 250px;
+    font-size: 25px;
+    background: transparent;
+    color: aliceblue;
+    border: 2px solid red;
+    padding: 15px;
+}
+.btnForThirdBox:hover{
+    border: 2px solid aliceblue;
+    transition: 0.2s all ease-in-out;
+}
+/* 4 BOX */
+.fourthBox{
+    position: relative;
+    background: url(/images/bgFor4box.png);
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.scilletFourthbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: none;
+}
+.textForFourthBox{
+    position: relative;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 100px;
+    hr{
+        width: 15%;
+        height: 4px;
+        border: none;
+        background-color: red;
+    }
+}
+.centerOfFourBox{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    top: 100px;
+    margin: 10px;
+    padding: 20px;
+    color: aliceblue;
+}
+#info{
+    position: relative;
+    bottom: 46px;
+    color: aliceblue;
+    width: 750px;
+    height: 200px;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid red;
+    font-size: 16px;
+    button{
+        padding: 12px;
+        margin: 10px;
+        background-color: transparent;
+        color: aliceblue;
+        border: 2px solid red;
+        width: 260px;
+        font-size: 20px;
+    }
+    button:hover{
+        border: 2px solid aliceblue;
+        transition: 0.2s all;
+    }
+}
+/* 5 box */
+.fifthBox{
+    width: 100%;
+    height: 900px;
+    background-color:rgba(237, 237, 237, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0px;
+}
+.textForFifthBox{
+    h3{
+        color: black;
+        padding: 5px;
+        margin: 5px;
+        font-size: 40px;
+        font-family: Geometria;
+    }
+    hr{
+        width: 100%;
+        height: 4px;
+        border: none;
+        background-color: red;
+    }
+}
+#news_block{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+#news{
+    width: 390px;
+    Height: 425px;
+    margin: 30px;
+    img{
+        width: 100%;
+        height: 290px;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+#textFornews{
+    width: 100%;
+    height: 135px;
+    background: rgba(29, 29, 29, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    position: relative;
+    bottom: 5px;
+    p{
+        color: red;
+        font-size: 12px;
+    }
+    h3{
+        color: aliceblue;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    h3:hover{
+        color: red;
+    }
+}
+.btnForFifthBox{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    position: relative;
+    left: 290px;
+    button{
+    padding: 20px;
+    width: 200px;
+    border: 3px solid red;
+    color: red;
+    background: transparent;
+    font-size: 18px;
+    }
+    button:hover{
+        border-color: black;
+        color: black;
+    }
+    svg{
+        border: 2px solid red;
+        width: 50px;
+        height: 50px;
+    }
+    svg:hover{
+        border-color: black;
+    }
+    svg:hover path{
+        stroke: black;
+        cursor: pointer;
+        transition: 0.2s all;
+    }
+}
+/* Sixthbox */
+#Sixthbox{
+    width: 100%;
+    height: 200px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        margin: 20px;
+        padding: 20px;
+    }
+}
+/* footer */
+footer{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    background: url(/images/bgforfooter.png);
+    background-size: cover;
+    opacity: 20px;
+}
+.footer_container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#page1{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 30px;
+    color:rgba(197, 197, 197, 0.839);
+    font-size: 19px;
+    img{
+        width: 170px;
+        height: 75px;
+    }
+}
+.page2{
+    h3{
+        font-size: 20px;
+        color: aliceblue;
+        padding: 10px;
+    }
+    li{
+        color: rgba(197, 197, 197, 0.839);
+        font-size: 17px;
+        padding: 5px;
+        cursor: pointer;
+    }
+}
+.page3{
+    h3{
+        font-size: 20px;
+        color: aliceblue;
+        padding: 10px;
+    }
+    li{
+        color: rgba(197, 197, 197, 0.839);
+        font-size: 17px;
+        padding: 5px;
+        cursor: pointer;
+    }
+}
+.page4{
+    width: 180px;
+    h3{
+        font-size: 20px;
+        color: aliceblue;
+        padding: 16px;
+    }
+    li{
+        color: rgba(197, 197, 197, 0.839);
+        font-size: 17px;
+        padding: 15px;
+        cursor: pointer;
+    }
+}
+.page5{
+    h3{
+        font-size: 20px;
+        color: aliceblue;
+        padding: 10px;
+    }
+    li{
+        color: rgba(197, 197, 197, 0.839);
+        font-size: 17px;
+        padding: 5px;
+        cursor: pointer;
+    }
+}
+.page6{
+    li{
+        color: aliceblue;
+        font-size: 18px;
+        padding: 10px;
+        cursor: default;
+    }
+    button{
+        background-color: transparent;
+        color: aliceblue;
+        border: 4px solid red;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    button:hover{
+        border-color: aliceblue;
+        transition: 0.2s all;
+    }
+}
+@media(max-width: 900px){
+
+    .container{
+        width: 900px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+}
+@media(max-width: 430px){
+    li, a{
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    .container{
+        width: 430px;
+        overflow-x: hidden;
+    }
+
+    /* 1 */
+
+    .first_box {
+        background-size: 900px;
+        height: 501px;
+    }
+
+    .text_container{
+        position: relative;
+        width: 200px;
+        top: 124px;
+        left: 50px;
+    }
+    
+    
+    .text{
+        font-size: 25px;
+        button{
+            width: 205px;
+            font-size: 18px;
+            border: 1px solid red;
+        }
+    }
+
+    
+
+    #buttons_container {
+        height: 121px;
+    }
+
+    #buttons_container button {
+        height: 118px;
+        width: 131px;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    #buttons_container img {
+        width: 78px;
+        height: 70px;
+    }
+
+    /* 2 */
+
+    #store img {
+        position: relative;
+        width: 272px;
+        height: 274px;
+        bottom: 13px;
+        opacity: 50%;
+        max-height: 1000px;
+        overflow: scroll;
+    }
+
+    #store{
+        width: 273px;
+    }
+
+    #imgForsecondBox{
+        width: 570px;
+        max-height: 540px;
+        overflow: scroll;
+    }
+
+    .textForSecondBox {
+        font-size: 20px;
+        hr{
+            width: 40%;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+
+    /* 3 */
+
+    .third_box{
+        background-size: 430px;
+
+    }
+
+    .textForThirdBox{
+        width: 390px;
+        font-size: 27px;
+        p{
+            font-size: 16px;
+        }
+        hr{
+            width: 50%;
+        }
+    }
+
+    .imgForThirdBox{
+        display: none;
+    }
+
+    .liForThirdBox {
+        li {
+            padding: 25px;
+            margin: 30px;
+            font-size: 30px;
+            position: relative;
+            bottom: 147px;
+            width: 446px;
+            height: 160px;
+            right: 69px;
+        }
+        h3 {
+            position: relative;
+            left: 69px;
+            font-size: 15px;
+        }
+        
+        p {
+            position: relative;
+            left: 69px;
+            font-size: 14px;
+            top: 10px;
+        }
+
+        img {
+            position: absolute;
+            right: 355px;
+            bottom: 58px;
+            width: 90px;
+            height: 82px;
+        }
+
+        .centerbox {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            color: aliceblue;
+            top: 272px;
+            width: 80%;
+        }
+    }
+    
+    .btnForThirdBox {
+        position: relative;
+        top: 147px;
+        width: 194px;
+        font-size: 18px;
+        border: 1px solid red;
+        padding: 12px;
+    }
+    .btnForThirdBox:hover{
+        border: 1px solid;
+    }
+
+    /* 4 */
+
+    .textForFourthBox {
+        font-size: 30px;
+        hr{
+            width: 50%;
+        }
+    }
+
+    .centerOfFourBox {
+        img{
+            display: none;
+        }
+
+        #info {
+            position: relative;
+            bottom: 10px;
+            width: 750px;
+            height: 450px;
+            font-size: 19px;
+            button{
+                position: relative;
+                top: 10px;
+            }
+        }
+    }
+    #news_block{
+        overflow: scroll;
+        flex-direction: column;
+        max-height: 600px;
+    }
+    
+    .btnForFifthBox{
+        width: 320px;
+        position: relative;
+        left: 0px;
+    }
+
+    #Sixthbox{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        display: flex;
+        max-width: 430px;
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+
+}
